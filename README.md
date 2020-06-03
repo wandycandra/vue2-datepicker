@@ -72,8 +72,8 @@ $primary-color: #1284e7;
 
 ## Internationalization
 
-The default language of v3.x is English. If you need other locales,
-you can import a locale file.
+The default language of v3.x is English. If you need other locales.
+You can import locale file.
 Once you import a locale, it becomes the active locale.
 
 ```js
@@ -190,7 +190,7 @@ You can also override some of the default locale by `lang`.
 
 #### custom format
 
-The `format` accepts an object to customize formatting.
+the `format` accepts an object to customize formatting.
 
 ```html
 <date-picker :format="momentFormat" />
@@ -228,7 +228,7 @@ set the format of binding value
 
 #### shortcuts
 
-The shortcuts for the range picker
+the shortcuts for the range picker
 
 ```js
 [
@@ -251,7 +251,7 @@ The shortcuts for the range picker
 
 #### time-picker-options
 
-Set fixed time list to select;
+set fixed time list to select;
 
 ```js
 {start: '00:00', step:'00:30' , end: '23:30', format: 'HH:mm' }
@@ -266,19 +266,19 @@ Set fixed time list to select;
 
 ### Events
 
-| Name            | Description                                                                        | Callback Arguments                                                                                                       |
-| --------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| input           | When the value change(v-model event)                                               | date                                                                                                                     |
-| change          | When the value change(same as input)                                               | date, type('date'\|'hour'\|'minute'\|'second'\|'ampm                                                                     |
-| open            | When panel opening                                                                 | event                                                                                                                         |
-| close           | When panel closing                                                                 |                                                                                                                          |
-| confirm         | When click 'confirm' button                                                        | date                                                                                                                     |
-| clear           | When click 'clear' button                                                          |                                                                                                                          |
-| input-error     | When user type a invalid Date                                                      | the input text                                                                                                           |
-| focus           | When input focus                                                                   |                                                                                                                          |
-| blur            | When input blur                                                                    |                                                                                                                          |
-| pick            | when select date [#429](https://github.com/mengxiong10/vue2-datepicker/issues/429) | date                                                                                                                     |
-| calendar-change | when change the calendar                                                           | date, oldDate, type('year'\|'month'\|'last-year'\|'next-year'\|'last-month'\|'next-month'\|'last-decade'\|'next-decade') |
+| Name            | Description                          | Callback Arguments                           |
+| --------------- | ------------------------------------ | -------------------------------------------- |
+| input           | When the value change(v-model event) | date                                         |
+| change          | When the value change(same as input) | date, type(date, hour, minute, second, ampm) |
+| open            | When panel opening                   |                                              |
+| close           | When panel closing                   |                                              |
+| confirm         | When click 'confirm' button          | date                                         |
+| clear           | When click 'clear' button            |                                              |
+| input-error     | When user type a invalid Date        | the input text                               |
+| focus           | When input focus                     |                                              |
+| blur            | When input blur                      |                                              |
+| pick            | when select date [#429](issues/429)  | date                                         |
+| calendar-change | when change the calendar             | date, oldDate                                |
 
 ### Slots
 
